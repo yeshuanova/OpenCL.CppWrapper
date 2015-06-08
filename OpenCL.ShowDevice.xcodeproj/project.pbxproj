@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C4C45AAC1B2417040069E624 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C45AAB1B2417040069E624 /* main.cpp */; };
+		C4C45AB31B241A7E0069E624 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C45AB21B241A7E0069E624 /* OpenCL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		C4C45AA81B2417040069E624 /* OpenCL.ShowDevice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCL.ShowDevice; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C45AAB1B2417040069E624 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C4C45AB21B241A7E0069E624 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		C4C45AB41B241B2B0069E624 /* cl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C45AB31B241A7E0069E624 /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +45,7 @@
 		C4C45A9F1B2417040069E624 = {
 			isa = PBXGroup;
 			children = (
+				C4C45AB21B241A7E0069E624 /* OpenCL.framework */,
 				C4C45AAA1B2417040069E624 /* OpenCL.ShowDevice */,
 				C4C45AA91B2417040069E624 /* Products */,
 			);
@@ -57,6 +62,7 @@
 		C4C45AAA1B2417040069E624 /* OpenCL.ShowDevice */ = {
 			isa = PBXGroup;
 			children = (
+				C4C45AB41B241B2B0069E624 /* cl.hpp */,
 				C4C45AAB1B2417040069E624 /* main.cpp */,
 			);
 			path = OpenCL.ShowDevice;
@@ -235,6 +241,7 @@
 				C4C45AB11B2417040069E624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
