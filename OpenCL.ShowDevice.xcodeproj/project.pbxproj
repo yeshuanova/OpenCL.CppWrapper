@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C42401471B2C04960064A94B /* cl_example_c.c in Sources */ = {isa = PBXBuildFile; fileRef = C42401451B2C04960064A94B /* cl_example_c.c */; };
+		C424014A1B2C056D0064A94B /* cl_example_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C42401481B2C056D0064A94B /* cl_example_cpp.cpp */; };
 		C4C45AAC1B2417040069E624 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C45AAB1B2417040069E624 /* main.cpp */; };
 		C4C45AB31B241A7E0069E624 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C45AB21B241A7E0069E624 /* OpenCL.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		C424014B1B2C0C080064A94B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.opencl;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# <com.apple.compilers.opencl>\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C4C45AA61B2417040069E624 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -24,6 +38,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C42401451B2C04960064A94B /* cl_example_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cl_example_c.c; sourceTree = "<group>"; };
+		C42401461B2C04960064A94B /* cl_example_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cl_example_c.h; sourceTree = "<group>"; };
+		C42401481B2C056D0064A94B /* cl_example_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cl_example_cpp.cpp; sourceTree = "<group>"; };
+		C42401491B2C056D0064A94B /* cl_example_cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cl_example_cpp.h; sourceTree = "<group>"; };
+		C4516BD41B29357800C9AFDA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C4C45AA81B2417040069E624 /* OpenCL.ShowDevice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCL.ShowDevice; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C45AAB1B2417040069E624 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4C45AB21B241A7E0069E624 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
@@ -62,8 +81,13 @@
 		C4C45AAA1B2417040069E624 /* OpenCL.ShowDevice */ = {
 			isa = PBXGroup;
 			children = (
+				C4516BD41B29357800C9AFDA /* README.md */,
 				C4C45AB41B241B2B0069E624 /* cl.hpp */,
 				C4C45AAB1B2417040069E624 /* main.cpp */,
+				C42401481B2C056D0064A94B /* cl_example_cpp.cpp */,
+				C42401491B2C056D0064A94B /* cl_example_cpp.h */,
+				C42401451B2C04960064A94B /* cl_example_c.c */,
+				C42401461B2C04960064A94B /* cl_example_c.h */,
 			);
 			path = OpenCL.ShowDevice;
 			sourceTree = "<group>";
@@ -80,6 +104,7 @@
 				C4C45AA61B2417040069E624 /* CopyFiles */,
 			);
 			buildRules = (
+				C424014B1B2C0C080064A94B /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -125,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C45AAC1B2417040069E624 /* main.cpp in Sources */,
+				C42401471B2C04960064A94B /* cl_example_c.c in Sources */,
+				C424014A1B2C056D0064A94B /* cl_example_cpp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
